@@ -1,0 +1,21 @@
+.form__info{
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    background: $description-color;
+    outline: none;
+    width: 240px;
+    height: 44px;
+    border: none;
+    padding: 7px;
+    margin-right: 10px;
+    &-message{
+        width: 495px;
+        height: 160px;
+        background: $description-color;
+        outline: none;
+        border: none;
+        padding: 7px;
+        margin-bottom: 20px;
+    }
+}
