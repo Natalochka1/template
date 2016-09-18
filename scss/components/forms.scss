@@ -19,3 +19,44 @@
         margin-bottom: 20px;
     }
 }
+
+
+$form-color: #fff !default;
+$form-bg: #ccc !default;
+$form-border: 1px solid #ccc !default;
+$form-border-radius: 2px !default;
+$form-height: 44px !default;
+$form-padding-x: 20px !default;
+$form-font-size: 14px !default;
+$form-line-height: 2 !default;
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        opacity: 1;
+        @content;
+    }
+    &::-moz-placeholder {
+        color: $color;
+        opacity: 1;
+        @content;
+    }
+    &::-ms-input-placeholder {
+        color: $color;
+        opacity: 1;
+        @content;
+    }
+}
+
+.form{
+    &-control{
+        width: 100%;
+        display: block;
+        color: #fff;
+        background-color: transparent; 
+        border: 1px solid #fff;
+        border-radius: 2px;
+        height: 44px;
+        line-height: 1.4;
+    }
+}
